@@ -23,7 +23,7 @@
     "test:coverage": "contentful-extension-scripts test --env=jsdom --coverage",
     "deploy-old": "npm run build && contentful extension update --force",
     "deploy": "npm run build && contentful extension update --force && npm run deploy-github-pages",
-    "deploy-github-pages": "git add ./build && git commit -m 'build' && git push && git checkout gh-pages && git merge master && git push github gh-pages && git checkout master",
+    "deploy-github-pages": "git add ./build && git commit -m 'build' && git push && git checkout gh-pages && git merge master && git push origin gh-pages && git checkout master",
     "configure": "contentful space use && contentful space environment use",
     "login": "contentful login",
     "logout": "contentful logout",
